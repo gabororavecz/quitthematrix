@@ -29,3 +29,21 @@ new Swiper('.card-wrapper', {
         }
     }
   });
+
+  // Set the maximum number of words you want to display
+  const maxWords = 13;
+
+  // Select all elements with the class 'card-title'
+  const cardTitles = document.querySelectorAll('.card-title');
+
+  // Loop through each 'card-title' element
+  cardTitles.forEach((title) => {
+    // Split the text content into an array of words
+    const words = title.innerText.split(' ');
+
+    // Check if the number of words exceeds the maximum limit
+    if (words.length > maxWords) {
+      // Limit the text content to the maximum number of words and add an ellipsis
+      title.innerText = words.slice(0, maxWords).join(' ') + '...';
+    }
+  });
