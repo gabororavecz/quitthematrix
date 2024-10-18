@@ -6,17 +6,25 @@
   
 /* Menu-container  */
   .menu-container {
+   position: sticky; /* This makes header stick at the top*/
+   top: 0; /* This makes header stick at the top*/
+   z-index: 2022; /* This makes header stick at the top*/
+   margin: auto;
+      
     color: #358500;
     background-color: #8e0202;  /* Red */
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    /* width: 100%; */
+    
   }
   
   .menu {
     width: 900px;
     display: flex;
     justify-content: space-between;
+    
   }
   .links {
    display: flex;
@@ -213,7 +221,7 @@ background: #f7dff5;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0 20px;
   justify-content: center;
 }
 
