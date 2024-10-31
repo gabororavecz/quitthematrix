@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
 /* Menu-container  */
   .menu-container {
    position: sticky; /* This makes header stick at the top*/
@@ -266,6 +265,9 @@ background: #f7dff5;
   justify-content: space-between;
 }
 
+.logo2 {
+   border-radius: 50px;
+}
 
 .photo-grid-container {
   display: flex;
