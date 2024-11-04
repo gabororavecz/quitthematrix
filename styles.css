@@ -18,6 +18,11 @@
     /* width: 100%; */
     
   }
+
+  .a {
+   color: #358500;
+   text-decoration: none; /* Remove the underline */
+  }
   
   .menu {
     width: 900px;
