@@ -1,3 +1,11 @@
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');   
+
+});
+
 new Swiper('.card-wrapper', {
     loop: true,
     //Space Between Cards
@@ -62,4 +70,17 @@ new Swiper('.card-wrapper', {
 
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach((el) => observer.observe(el));
+
+//Slider
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  let currentSlide = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }, 5000); // Change every 5 seconds
+  });
 
