@@ -97,12 +97,13 @@
    }
    .menu.active .news .signup {
       display: flex;
-      justify-content: ;
+      /* justify-content: ; */
     }
     .login {
       display: flex;
       justify-content: center;
       padding-left: 0; /*To override css so in active hamburger  */
+      padding-right: 0; /*To override css so in active hamburger  */
     }
     .signup {
       display: flex;
@@ -111,6 +112,8 @@
     .news {
       display: flex;
       justify-content: center;
+      padding-left: 0; /*To override css so in active hamburger  */
+      padding-right: 0; /*To override css so in active hamburger  */
     }
     
   
