@@ -12,7 +12,7 @@
    
     color: #358500;
     background-color: #8e0202;  /* Red */
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     /* width: 100%; */
@@ -50,6 +50,9 @@
 
 .signup {
   margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Hamburger Menu */
